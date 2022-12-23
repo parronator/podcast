@@ -4,7 +4,7 @@ import Default from './navbar-search';
 
 describe('Default', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Default placeholder="" callback={() => {}} />);
+    const { baseElement } = render(<Default placeholder="" callback={vi.fn()} />);
     expect(baseElement).toBeTruthy();
   });
 

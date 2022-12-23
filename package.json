@@ -7,8 +7,8 @@
     "build": "nx build --configuration=production",
     "deploy:start": "npm run build && npm run deploy:stop || true && docker build -t zara -f ci/Dockerfile . && docker run --name zara-container -d -p 8080:80 zara",
     "deploy:stop": "docker stop zara-container && docker rm zara-container",
-    "test": "nx test --skip-nx-cache",
-    "lint": "nx lint --skip-nx-cache",
+    "test": "nx test",
+    "lint": "nx lint",
     "graph": "nx dep-graph"
   },
   "private": true,

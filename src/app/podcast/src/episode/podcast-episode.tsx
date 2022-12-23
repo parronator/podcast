@@ -12,7 +12,7 @@ export const PodcastEpisode: FC = () => {
   const [state, loading]: [Podcast, boolean] = usePersistedQuery<Podcast>('api/detail', new PodcastDetailDTO());
   const { episodeId } = useParams();
 
-  const episode = !loading && state ? state.getEpisode(episodeId!) : Episode.empty();
+  const episode = !loading && state ? state.getEpisode(episodeId) : Episode.empty();
 
   return (
     <Layout.SidebarContent loading={loading}

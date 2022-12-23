@@ -4,7 +4,7 @@ import List from './layout-list';
 
 describe('List', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<List searchPlaceholder='' searchCallback={vi.fn(() => {})}/>);
+    const { baseElement } = render(<List searchPlaceholder='' searchCallback={vi.fn()}/>);
     expect(baseElement).toBeTruthy();
   });
 });
