@@ -21,8 +21,6 @@
 
 ## Sobre la prueba
 
-![Screen Shot](images/screenshot.png)
-
 En esta prueba se ha encontrado un problema inicial con los endpoints por CORS, el cual no se ha solucionado mediante 
 los tipicos proxies que permiten hacer la request. Esto me ha llevado a coger el resultado de las peticiones directamente
 y usar Mock Service Worker y simular que se llama a esos endpoints.
