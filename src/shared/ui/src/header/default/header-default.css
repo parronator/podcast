@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 12px 5px;
+}
+
+.header__title {
+    color: royalblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header__spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid royalblue;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

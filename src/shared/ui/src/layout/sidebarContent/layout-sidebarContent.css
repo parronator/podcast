@@ -1,0 +1,19 @@
+.layout-sidebar__container {
+    display: flex;
+    margin: 1rem 1.5rem;
+}
+
+.layout-sidebar__content {
+    margin-left: 1.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .layout-sidebar__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .layout-sidebar__content {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.layout__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+}
+
+.layout__content {
+    margin: 1.5rem 0;
+}

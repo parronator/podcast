@@ -1,0 +1,6 @@
+.list__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    grid-auto-rows: minmax(13rem, auto);
+    gap: 10px;
+}
